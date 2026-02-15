@@ -8,7 +8,7 @@ import AlgoDashboard from "./components/AlgoDashboard";
 // --- CONFIG ---
 const API_KEY = ""; // Keep empty or use your key
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`;
-const BACKEND_URL = 'http://localhost:5000';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
 const WS_URL = 'ws://localhost:8080';
 
 // --- HELPER TO RESOLVE SYMBOL KEY ---
